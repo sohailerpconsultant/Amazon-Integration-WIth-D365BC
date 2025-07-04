@@ -1,0 +1,350 @@
+{
+	"info": {
+		"_postman_id": "b3248001-e383-4830-b618-f077fca2cf8e",
+		"name": "Humantra Amazon UAE Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23320268"
+	},
+	"item": [
+		{
+			"name": "Amazon Sale Orders",
+			"item": [
+				{
+					"name": "Order Header",
+					"item": [
+						{
+							"name": "Orders",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "x-amz-access-token",
+										"value": "Atza|IwEBIIG-giDkId94LAmaCZApi6SBX4UIpDfE2Eg_PCqNkvNGRT1kp8ZbPbzMreyuzrVB3RWM2VX07tBgHyUG_USgeqPLeqCW3et3TTjn0e3mMBTpPp1C2nr2KFrF_TdF1RIUCsMyFEUyvxkqQ23ku1gtiUqPj04AwV20rh1AxQEZ1uVLj-oJkbfEboBy9q2zHL4pneepOpB0ePJq_yDjFJkrA1fBMywuAS_OiW1SDL2X56z4uHVJu-9euDXo_0ZhxgztiXLNh__ceuCe-9VDG7Ppl1sdjGixEEidyaMgsVjPZlDEAl6M-ZKhTteZqdtqohei1qyoe0Jyba7X426miBtSUGyedS08J3YWJABLH4tV18LbgA"
+									}
+								],
+								"url": {
+									"raw": "https://sellingpartnerapi-eu.amazon.com/orders/v0/orders?MarketplaceIds=A2VIGQ35RCS4UG&CreatedAfter=2024-05-10T04:00:00&CreatedBefore=2024-05-11T04:00:00&MaxResultPerPage=10",
+									"protocol": "https",
+									"host": [
+										"sellingpartnerapi-eu",
+										"amazon",
+										"com"
+									],
+									"path": [
+										"orders",
+										"v0",
+										"orders"
+									],
+									"query": [
+										{
+											"key": "MarketplaceIds",
+											"value": "A2VIGQ35RCS4UG"
+										},
+										{
+											"key": "CreatedAfter",
+											"value": "2024-05-10T04:00:00"
+										},
+										{
+											"key": "CreatedBefore",
+											"value": "2024-05-11T04:00:00"
+										},
+										{
+											"key": "MaxResultPerPage",
+											"value": "10"
+										},
+										{
+											"key": "NextToken",
+											"value": "Jyma11GT7FuaJqJYLDm0ZAmQazDrhw3CqRQJ7lYDKkpUojdU4H46tsNI3HOI22PIxqXyQLkGMBs8VhF73Xgy%2BwZj9y416hR55cvqs%2FzQiJoOjVF%2FH1NRhcf43qLRzM6bInTAy%2BXKVmRZBY%2BoaVuyc0TdEE4avCfHy2LE%2FW2ZipY6eU%2B70V3XHvxe34JNHNwXf2GLmUGyr9UGnxD0RJmrryegoU0IPZxX1HsFpucj95Q4wyyT1Z19l82ZKmZ%2Bkgg6MBO%2FreDY2s8X%2BG%2FWxAkd4Fo%2B%2BpAnAbakLMx6u56MW0qG1bEi00oPms%2BRCEjxtHY0iDAM8NSCHM1sulOVWGT%2BK5asrZZETwgLPumXKzIiSazvJyGtO8goyV4XIg1TfYTSFbgxn%2BGxLLLwK4TCp4Ag0Gce7MyZ8TGoUyI0c1kTtmrG8daoW70e3A%3D%3D",
+											"disabled": true
+										},
+										{
+											"key": "OrderStatuses",
+											"value": "Pending",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Order By ID",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-amz-access-token",
+										"value": "Atza|IwEBIC1hY45BgmcWIsadyaz3fLS8IflgtNjOkzE3t4z_CpSOefkGQAmt611rKVj1U0bB2iZ-G1V9B5Y9k7p2D8gILtcukFhHOl0v_CR1WfUlAxZgIKpWIzefcBFaaaPYGmyJR4EZQL3vHtBIwPyrELlnb7THxDncfB2bwr_gPfO9SFxBu4utkRClE3E1DwSAxGm4N4aMa2yrhJhGKF6Zwu4LY-_QVPvEnE_u-Ve5vKvLOc7Z2knSH3EgzFXen_8ybDkQmwtmD8jgzytMuPdxqixwadd20CYHZ1ZC0pU9AEtUsHwA3-ZvK876QpmdEQxY04qU6_VntoeydUj7e13hUkaPxVvk",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "https://sellingpartnerapi-eu.amazon.com/orders/v0/orders/:orderId",
+									"protocol": "https",
+									"host": [
+										"sellingpartnerapi-eu",
+										"amazon",
+										"com"
+									],
+									"path": [
+										"orders",
+										"v0",
+										"orders",
+										":orderId"
+									],
+									"query": [
+										{
+											"key": "MarketplaceIds",
+											"value": "A2VIGQ35RCS4UG",
+											"disabled": true
+										}
+									],
+									"variable": [
+										{
+											"key": "orderId",
+											"value": "403-0184124-4694713"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Orders Items Lines",
+					"item": [
+						{
+							"name": "Get Orders Items Line",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-amz-access-token",
+										"value": "Atza|IwEBIC1hY45BgmcWIsadyaz3fLS8IflgtNjOkzE3t4z_CpSOefkGQAmt611rKVj1U0bB2iZ-G1V9B5Y9k7p2D8gILtcukFhHOl0v_CR1WfUlAxZgIKpWIzefcBFaaaPYGmyJR4EZQL3vHtBIwPyrELlnb7THxDncfB2bwr_gPfO9SFxBu4utkRClE3E1DwSAxGm4N4aMa2yrhJhGKF6Zwu4LY-_QVPvEnE_u-Ve5vKvLOc7Z2knSH3EgzFXen_8ybDkQmwtmD8jgzytMuPdxqixwadd20CYHZ1ZC0pU9AEtUsHwA3-ZvK876QpmdEQxY04qU6_VntoeydUj7e13hUkaPxVvk",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sellingpartnerapi-eu.amazon.com/orders/v0/orders/:orderId/orderItems?MarketplaceIds=A2VIGQ35RCS4UG",
+									"protocol": "https",
+									"host": [
+										"sellingpartnerapi-eu",
+										"amazon",
+										"com"
+									],
+									"path": [
+										"orders",
+										"v0",
+										"orders",
+										":orderId",
+										"orderItems"
+									],
+									"query": [
+										{
+											"key": "MarketplaceIds",
+											"value": "A2VIGQ35RCS4UG"
+										},
+										{
+											"key": null,
+											"value": "",
+											"disabled": true
+										}
+									],
+									"variable": [
+										{
+											"key": "orderId",
+											"value": "403-0184124-4694713"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "BuyerInfo",
+					"item": [
+						{
+							"name": "Buyer Info by OrderId",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-amz-access-token",
+										"value": "Atza|IwEBIC1hY45BgmcWIsadyaz3fLS8IflgtNjOkzE3t4z_CpSOefkGQAmt611rKVj1U0bB2iZ-G1V9B5Y9k7p2D8gILtcukFhHOl0v_CR1WfUlAxZgIKpWIzefcBFaaaPYGmyJR4EZQL3vHtBIwPyrELlnb7THxDncfB2bwr_gPfO9SFxBu4utkRClE3E1DwSAxGm4N4aMa2yrhJhGKF6Zwu4LY-_QVPvEnE_u-Ve5vKvLOc7Z2knSH3EgzFXen_8ybDkQmwtmD8jgzytMuPdxqixwadd20CYHZ1ZC0pU9AEtUsHwA3-ZvK876QpmdEQxY04qU6_VntoeydUj7e13hUkaPxVvk",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sellingpartnerapi-eu.amazon.com/orders/v0/orders/:orderId/buyerInfo?MarketplaceIds=A2VIGQ35RCS4UG",
+									"protocol": "https",
+									"host": [
+										"sellingpartnerapi-eu",
+										"amazon",
+										"com"
+									],
+									"path": [
+										"orders",
+										"v0",
+										"orders",
+										":orderId",
+										"buyerInfo"
+									],
+									"query": [
+										{
+											"key": "MarketplaceIds",
+											"value": "A2VIGQ35RCS4UG"
+										}
+									],
+									"variable": [
+										{
+											"key": "orderId",
+											"value": "403-0184124-4694713"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Order Address",
+					"item": [
+						{
+							"name": "Order Address",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-amz-access-token",
+										"value": "Atza|IwEBIC1hY45BgmcWIsadyaz3fLS8IflgtNjOkzE3t4z_CpSOefkGQAmt611rKVj1U0bB2iZ-G1V9B5Y9k7p2D8gILtcukFhHOl0v_CR1WfUlAxZgIKpWIzefcBFaaaPYGmyJR4EZQL3vHtBIwPyrELlnb7THxDncfB2bwr_gPfO9SFxBu4utkRClE3E1DwSAxGm4N4aMa2yrhJhGKF6Zwu4LY-_QVPvEnE_u-Ve5vKvLOc7Z2knSH3EgzFXen_8ybDkQmwtmD8jgzytMuPdxqixwadd20CYHZ1ZC0pU9AEtUsHwA3-ZvK876QpmdEQxY04qU6_VntoeydUj7e13hUkaPxVvk",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sellingpartnerapi-eu.amazon.com/orders/v0/orders/:orderId/address?MarketplaceIds=A2VIGQ35RCS4UG",
+									"protocol": "https",
+									"host": [
+										"sellingpartnerapi-eu",
+										"amazon",
+										"com"
+									],
+									"path": [
+										"orders",
+										"v0",
+										"orders",
+										":orderId",
+										"address"
+									],
+									"query": [
+										{
+											"key": "MarketplaceIds",
+											"value": "A2VIGQ35RCS4UG"
+										}
+									],
+									"variable": [
+										{
+											"key": "orderId",
+											"value": "403-0184124-4694713"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Amazon Finance API",
+			"item": [
+				{
+					"name": "Amazon Order Fee",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-amz-access-token",
+								"value": "Atza|IwEBIBElPtX-KQ4mbD4ozGg3mSEWHu55IK42lY2pt7LWr7qOyddEeWuDMI9xyn0F4DeXZEPhO5o_4CuldCisjy8yn9Hh-MPJclC3F39bvxmV--FSVXlps43Uj3YcX45IxGwd_D1FJuXntGu7zYEhT-FzAsBrJ-faAxFgWI1iYOl4uAaCsIbZahNnH1Hri-WqDWyHcIksaEH657hWD5c-OG_CgDP3dFZ79k69IlopdZ4PzgshZCeU0aiTDcfaAHrWZR-ix7qNwNGwqJ_W9r5vCJHjnVU6d0lM608QhlDO3j18kmu4UZizIEgnrcfpknNI6ksTzisVOJgTlb1VCOB1lZOQD9GPJhbKTy1ISuIfNWYYhFjuoA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://sellingpartnerapi-eu.amazon.com/finances/v0/orders/408-8629264-1169948/financialEvents?MarketplaceIds=A2VIGQ35RCS4UG",
+							"protocol": "https",
+							"host": [
+								"sellingpartnerapi-eu",
+								"amazon",
+								"com"
+							],
+							"path": [
+								"finances",
+								"v0",
+								"orders",
+								"408-8629264-1169948",
+								"financialEvents"
+							],
+							"query": [
+								{
+									"key": "MarketplaceIds",
+									"value": "A2VIGQ35RCS4UG"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
